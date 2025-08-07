@@ -68,6 +68,7 @@ class UrlMonitor:
             if tasks:
                 await asyncio.gather(*tasks)
                 self.save_data()
+            await asyncio.sleep(0)
             
 
     async def update_urls_list(self):

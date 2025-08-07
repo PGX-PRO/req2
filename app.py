@@ -76,7 +76,7 @@ class UrlMonitor:
         logger.info("Iniciando actualización periódica de URLs...")
         while True:
             try:
-                async with self.session.get("https://timercrud.onrender.com/links") as response:
+                async with self.session.get("https://timercrud-w93p.onrender.com/links") as response:
                     if response.status == 200:
                         data = await response.json()
                         logger.info("Actualizando lista de URLs desde API")
